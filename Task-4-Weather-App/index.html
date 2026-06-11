@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="search-box">
+            <i class='bx bx-map'></i>
+            <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+            <button id="search-btn"><i class='bx bx-search'></i></button>
+        </div>
+
+        <div class="error-box" id="error-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/5656/5656389.png" alt="Not Found">
+            <p>Oops! City not found.</p>
+        </div>
+
+        <div class="weather-box" id="weather-box">
+            <div class="box">
+                <img src="" id="weather-icon" alt="Weather Icon">
+                <p class="temperature" id="temp">0<span>°C</span></p>
+                <p class="description" id="desc">Clear Sky</p>
+            </div>
+        </div>
+
+        <div class="weather-details" id="weather-details">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <span id="humidity-val">0%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class='bx bx-wind'></i>
+                <div class="text">
+                    <span id="wind-val">0 Km/h</span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
